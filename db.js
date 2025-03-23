@@ -1,10 +1,11 @@
 let mongoose=require("mongoose");
 require('dotenv').config()
 
-//   const mongooURL=process.env.MONGO_URL_LOCAL
- const mongooURL=process.env.MONGO_URl
+//  const mongooURL=process.env.MONGP_URL_LOCAL
+ const mongooURL=process.env.MONGOURL
 
 mongoose.connect(mongooURL,{
+
 
 
 })
@@ -27,3 +28,5 @@ db.on("disconnected",()=>{
 
 
 module.exports=db;
+
+
